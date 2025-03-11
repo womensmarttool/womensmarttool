@@ -5,6 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women Smart Tool</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ADD8E6;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        #hero {
+            background: url('hero-bg.webp') no-repeat center center/cover;
+            position: relative;
+            color: white;
+            padding: 100px 20px;
+        }
+        #hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        #hero h2, #hero p {
+            position: relative;
+            z-index: 1;
+        }
+        footer {
+            background-color: #ADD8E6;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -43,6 +97,8 @@
         <p>&copy; 2025 Women Smart Tool. All rights reserved.</p>
     </footer>
     
-    <script src="script.js"></script>
+    <script>
+        // Add any JavaScript functionality here if needed
+    </script>
 </body>
 </html>
